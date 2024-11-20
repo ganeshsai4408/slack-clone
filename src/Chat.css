@@ -1,0 +1,77 @@
+.chat {
+    flex: 0.7;
+    flex-grow: 1;
+    overflow-y: scroll;
+    padding-bottom: 100px; /* Reduced padding to match the height of the input */
+    background-color: #f8f8f8;
+    border-left: 1px solid lightgray;
+    position: relative; /* Ensure children are positioned relative to this container */
+}
+
+.chat_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid lightgray;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.chat_channelName {
+    display: flex;
+    align-items: center;
+    text-transform: lowercase;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    flex: 1;
+}
+
+.chat_channelName > h4 {
+    margin-right: 10px;
+}
+
+.chat_channelName > .MuiSvgIcon-root {
+    font-size: 20px;
+    color: gray;
+}
+
+.chat_headerRight {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.chat_headerRight > p {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #555;
+    margin: 0;
+}
+
+.chat_headerRight > p > .MuiSvgIcon-root {
+    margin-right: 5px !important;
+    font-size: 18px;
+    color: #555;
+}
+
+/* NEW STYLES */
+.chat_messages {
+    padding: 20px; /* Space around messages */
+    margin-bottom: 60px; /* Ensure space for the input at the bottom */
+    overflow-y: auto; /* Allow scrolling */
+}
+
+.chatInput {
+    position: fixed; /* Place input at the bottom */
+    bottom: 0;
+    width: calc(100% - 240px); /* Adjust width for sidebars */
+    background-color: #f8f8f8;
+    z-index: 100;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}

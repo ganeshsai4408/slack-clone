@@ -1,0 +1,44 @@
+.chatInput {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f8f8f8;
+    padding: 15px 25px; /* Increase padding for better spacing */
+    z-index: 100;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.chatInput > form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.chatInput > form > input {
+    flex: 1; /* Takes the maximum space available */
+    border: 1px solid gray;
+    border-radius: 25px; /* Rounded input field for a modern look */
+    padding: 15px 20px; /* Increase padding for a larger input box */
+    font-size: 18px; /* Increase font size for readability */
+    outline: none;
+    margin-right: 15px; /* Increase spacing between input and button */
+    box-sizing: border-box; /* Ensure consistent padding and width */
+}
+
+.chatInput > form > button {
+    background-color: #007a5a; /* Slack-inspired green */
+    color: white;
+    border: none;
+    border-radius: 25px; /* Match the input's rounded style */
+    padding: 12px 25px; /* Increase padding for a larger button */
+    font-size: 18px; /* Match the font size with the input field */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.chatInput > form > button:hover {
+    background-color: #005a43; /* Slightly darker green on hover */
+    transform: scale(1.05); /* Add a hover effect for better UX */
+}
