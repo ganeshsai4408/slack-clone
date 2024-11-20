@@ -5,7 +5,7 @@ import { getAuth, GoogleAuthProvider } from "firebase/auth";
 import { collection, addDoc, serverTimestamp } from "firebase/firestore";
 const firebaseConfig = {
   apiKey: "AIzaSyAVwv8qpNIUnXdAqXUYWgwDeg2OI5YqOeI",
-  authDomain: "slack-clone-1ab3a.firebaseapp.com",
+  authDomain: "https://slack-clone-delta-indol.vercel.app/",
   databaseURL: "https://slack-clone-1ab3a-default-rtdb.firebaseio.com",
   projectId: "slack-clone-1ab3a",
   storageBucket: "slack-clone-1ab3a.firebasestorage.app",
